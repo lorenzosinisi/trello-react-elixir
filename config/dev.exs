@@ -31,7 +31,7 @@ config :logger, :console, format: "[$level] $message\n"
 # Configure your database
 config :phoenix_trello, PhoenixTrello.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "",
+  username: "lorenzosinisi",
   password: "",
   database: "phoenix_trello_dev",
   pool_size: 10 # The amount of database connections in the pool

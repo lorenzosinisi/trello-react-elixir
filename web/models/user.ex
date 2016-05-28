@@ -6,12 +6,12 @@ defmodule PhoenixTrello.User do
     field :last_name, :string
     field :email, :string
     field :encrypted_password, :string
-
+    field :password, :string, virtual: true
     timestamps
   end
 
-  @required_fields ~w(first_name last_name email encrypted_password)
-  @optional_fields ~w()
+  @required_fields ~w(first_name last_name email)
+  @optional_fields ~w(encrypted_password)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
