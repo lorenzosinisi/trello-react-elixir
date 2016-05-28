@@ -10,7 +10,7 @@ defmodule PhoenixTrello.User do
     timestamps
   end
 
-  @required_fields ~w(first_name last_name email)
+  @required_fields ~w(first_name last_name email password)
   @optional_fields ~w(encrypted_password)
 
   @doc """
